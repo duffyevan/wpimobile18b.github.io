@@ -300,8 +300,9 @@ To display your image there are three aspects that need to be taken care of.
     - `ImageView mKittenView = (ImageView) findViewById(R.id.kittenView);`
 2. Load your targetted image from assets
     - `InputStream image_stream = getAssets().open(path_to_picture_in_assets);`
+    - `Drawable image = Drawable.createFromStream(image_stream, null);`
 3. Set the ImageView to display your image
-    - `mImageView.setImageBitmap(BitmapFactory.decodeStream(image_stream))`
+    - `mKittenView.setImageDrawable(image);`
 
 Put these all together in your code, referencing your own ImageView and photos, and you should have a brand new app to run.
 
