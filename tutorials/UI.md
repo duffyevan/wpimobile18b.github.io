@@ -299,7 +299,7 @@ To display your image there are three aspects that need to be taken care of.
 1. Access the ImageView that you want to put the picture in.  This is done by selecting it by the ID we assigned earlier.
     - `ImageView mKittenView = (ImageView) findViewById(R.id.kittenView);`
 2. Load your targetted image from assets
-    - `InputStream image_stream = getAssets().open(path_to_picture_in_assets)`
+    - `InputStream image_stream = getAssets().open(path_to_picture_in_assets);`
 3. Set the ImageView to display your image
     - `mImageView.setImageBitmap(BitmapFactory.decodeStream(image_stream))`
 
